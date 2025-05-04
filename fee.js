@@ -6,7 +6,7 @@ modebtn.addEventListener("click",()=>{
         curmode="dark";
         document.querySelector("body").style.backgroundColor="black";
     }else{
-        curmode="light";
+        curmode="light"; 
         document.querySelector("body").style.backgroundColor="white";
 }
 
