@@ -5,7 +5,7 @@ class Area {
       this.radius = radius;
     }
     Rectangle() {
-      if (this.length > 0 && this.width > 0) {
+      if (this.length >0 && this.width > 0) {
         return this.length * this.width;
       } else {
         return "Invalid dimensions for rectangle";
