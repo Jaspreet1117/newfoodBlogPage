@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css"
+</head>
+<body>
+    <section class="sign-up-section">
+        <h2>Stay Updated!</h2>
+        <p>Subscribe to our newsletter for the latest updates directly in your inbox.</p>
+    
+        <form class="signup-form" id="signupForm">
+            <input type="email" name="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+        </form>
+    
+        <p id="thankYouMessage" style="display:none; margin-top: 20px; color: green;">Thank you for subscribing!</p>
+    </section>
+    <footer>
+      <div class="fa-icon">
+         <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    
+      <p>&copy; 2024 Chef Delight. All Rights Reserved.</p>
+      <p>A Raptive Partner Site.</p>
+    
+      <div class="legal">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+      </div>
+    
+      <p>Information from your device can be used to personalize your ad experience.</p>
+      <p>Do not sell or share my personal information.</p>
+    </footer>
+    <script>
+        // JavaScript Validation for Email Field
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting immediately
+            var emailInput = document.querySelector('input[name="email"]');
+         
+            if (!emailInput.value || !validateEmail(emailInput.value)) {
+                alert('Please enter a valid email address!');
+                return;
+            }
+    
+            // Show a thank you message
+            document.getElementById('thankYouMessage').style.display = 'block';
+            emailInput.value = ''; // Clear the input field
+        });
+    
+        // Simple email validation function
+        function validateEmail(email) {
+            var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+
+</body>
+</html>

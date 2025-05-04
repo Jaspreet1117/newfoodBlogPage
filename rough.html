@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a link="stylesheet" href=""></a>
+    <style>.recipe-item {
+        border: 3px solid black;
+        padding: 10px;
+        cursor: pointer;
+        margin: 20px;
+      
+      }
+      
+      .recipe-popup {
+        display: none ;
+        position: static;
+        background-color: chocolate;
+        border: 3px solid black;
+        width:100px;
+        z-index: 1;
+      }
+      
+      .recipe-item:hover .recipe-popup {
+        display: block;
+      }</style>
+      <script>
+      const recipePopup = document.querySelector('.recipe-popup');
+      
+      recipeItem.addEventListener('mouseover', () => {
+        recipePopup.style.opacity = 0; // Initially hide the popup
+        recipePopup.style.display = 'block'; // Show the popup
+        setTimeout(() => {
+          recipePopup.style.opacity = 1; // Fade in the popup
+        }, 10);
+    });
+
+recipeItem.addEventListener('mouseout', () => {
+  recipePopup.style.opacity = 0;
+  setTimeout(() => {
+    recipePopup.style.display = 'none';
+  }, 300);
+});</script>
+</head>
+<body>
+    <div class="recipe-item">
+        <h2>Sandwich </h2>
+        <div class="recipe-popup">
+    <div class="recipe-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYbrfL5jxN-56vR20XJ7rsNmvBV5VOLbKvuQ&s" alt="Simple Sandwich" class="recipe-image">
+        <h1>Sandwich Recipe</h1>
+        <p>This easy and quick sandwich is perfect for any meal. Customize it with your favorite fillings for a satisfying snack or meal.</p>
+
+        <div class="preparation-time">
+            <h3>Preparation Time</h3>
+            <ul>
+                <li>Prep: Approximately 5 minutes</li>
+                <li>Cooking: None required</li>
+            </ul>
+        </div>
+
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 slices of bread</li>
+                <li>Butter or mayonnaise</li>
+                <li>1 slice of cheese</li>
+                <li>1 slice of ham or turkey</li>
+                <li>Optional: lettuce, tomato, cucumber, etc.</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Spread butter or mayonnaise on one side of each bread slice.</li>
+                <li>Place cheese, ham or turkey, and any optional veggies between the bread slices.</li>
+                <li>Press the slices together, cut in half if desired, and serve.</li>
+            </ol>
+        </div>
+
+        <div class="nutrition">
+            <h2>Nutrition</h2>
+            <table>
+                <tr><th>Calories</th><td>200 kcal</td></tr>
+                <tr><th>Protein</th><td>8g</td></tr>
+                <tr><th>Carbs</th><td>20g</td></tr>
+                <tr><th>Fat</th><td>9g</td></tr>
+            </table></div></div>
+         </div> 
+    </div>
+
+
+    <div class="recipe-container">
+        <div class="recipe-item">
+            <h2>Tomato Soup</h2>
+            <div class="recipe-popup">
+        <img src="tomato.jpeg" alt="Tomato Soup" class="recipe-image">
+        <h1>Tomato Soup Recipe</h1>
+        <p>A comforting and flavorful soup.</p>
+        <div class="preparation-time"> 
+            <h3>Preparation Time</h3>
+            <ul>
+                <li>Prep: 10 minutes</li>
+                <li>Cook: 25 minutes</li>
+            </ul>
+</div>
+
+        <div class="ingredients"> 
+            <h2>Ingredients</h2>
+            <ul>
+                <li>4 large ripe tomatoes, chopped</li>
+                <li>1 onion, chopped</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 teaspoon olive oil</li>
+                <li>1 teaspoon dried oregano</li>
+                <li>1/2 teaspoon black pepper</li>
+                <li>1/2 teaspoon salt</li>
+                <li>4 cups vegetable broth</li>
+                <li>1/2 cup heavy cream (optional)</li>
+                <li>Fresh basil leaves, for garnish</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li><strong>Sauté the Vegetables:</strong> Heat olive oil in a large pot over medium heat. Add onion and garlic, cook until softened.</li>
+                <li><strong>Add Tomatoes and Spices:</strong> Add chopped tomatoes, oregano, black pepper, and salt. Cook for 5-7 minutes, or until the tomatoes have softened.</li>
+                <li><strong>Add Broth and Simmer:</strong> Pour in vegetable broth and bring to a boil. Reduce heat and simmer for 15-20 minutes, or until the soup has thickened.</li>
+                <li><strong>Blend the Soup:</strong> Using an immersion blender or a regular blender, blend the soup until smooth.</li>
+                <li><strong>Add Cream (Optional):</strong> Stir in heavy cream, if desired.</li>
+                <li><strong>Serve:</strong> Serve hot, garnished with fresh basil leaves.</li>
+            </ol>
+        </div>
+
+        <div class="nutrition">
+            <h2>Nutrition</h2>
+            <table>
+                <tr><th>Calories</th><td>150 kcal per serving</td></tr>
+                <tr><th>Protein</th><td>5g</td></tr>
+                <tr><th>Carbs</th><td>15g</td></tr>
+                <tr><th>Fat</th><td>5g</td></tr>
+            </table>
+        </div> 
+    </div> 
+    <div class="recipe-item">
+        <h2>Vda-Pav</h2>
+        <div class="recipe-popup">
+    <div class="recipe-container">
+        <img src="vda pav.jpeg" alt="Vada Pav" class="recipe-image">
+        <h1>Vada Pav Recipe</h1>
+        <p>A popular Maharashtrian street food.</p>
+
+        <div class="preparation-time">
+            <h3>Preparation Time</h3>
+            <ul>
+                <li>Prep: 30 minutes</li>
+                <li>Cook: 20 minutes</li>
+            </ul>
+        </div>
+
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <h3>For the Vada:</h3>
+            <ul>
+                <li>1 cup urad dal (soaked overnight)</li>
+                <li>1 green chili, finely chopped</li>
+                <li>1 teaspoon ginger-garlic paste</li>
+                <li>1/2 teaspoon cumin seeds</li>
+                <li>1/4 teaspoon red chili powder</li>
+                <li>Salt to taste</li>
+                <li>Oil for frying</li>
+            </ul>
+
+            <h3>For the Pav:</h3>
+            <ul>
+                <li>Pav buns</li>
+            </ul>
+
+            <h3>For the Green Chutney:</h3>
+            <ul>
+                <li>1 bunch coriander leaves</li>
+                <li>2 green chilies</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>1/2 teaspoon lemon juice</li>
+                <li>Salt to taste</li>
+                <li>Water as needed</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <h3>Making the Vada:</h3>
+            <ol>
+                <li>Grind the soaked urad dal into a fine paste.</li>
+                <li>Add the green chili, ginger-garlic paste, cumin seeds, red chili powder, and salt to the batter. Mix well.</li>
+                <li>Heat oil in a deep frying pan. Drop spoonfuls of batter into the hot oil and fry until golden brown.</li>
+                <li>Drain the vadas on paper towels.</li>
+            </ol>
+
+            <h3>Making the Green Chutney:</h3>
+            <ol>
+                <li>Blend the coriander leaves, green chilies, cumin seeds, lemon juice, salt, and water into a smooth paste.</li>
+            </ol>
+
+            <h3>Assembling the Vada Pav:</h3>
+            <ol>
+                <li>Cut the pav buns in half.</li>
+                <li>Apply a generous amount of green chutney to one half of the bun.</li>
+                <li>Place a hot vada on top of the chutney.</li>
+                <li>Cover with the other half of the bun.</li>
+            </ol>
+        </div>
+
+        <div class="nutrition">
+            <h2>Nutrition</h2>
+            <table>
+                <tr><th>Calories</th><td>300 kcal per serving</td></tr>
+                <tr><th>Protein</th><td>10g</td></tr>
+                <tr><th>Carbs</th><td>40g</td></tr>
+                <tr><th>Fat</th><td>15g</td></tr>
+            </table>
+         </div> 
+    </div> 
+    
+</body>
+</html>

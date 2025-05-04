@@ -1,0 +1,137 @@
+.headerimg {
+    position:relative;
+    width:100%;
+    height:auto;
+    background-image: ;
+    z-index: 1;
+    transition: 0.3s ease;
+}
+.headerinfo{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    z-index: 9;
+    color:#fff;
+    padding-top: 8rem;
+    padding-bottom:13rem;
+}
+.headerimg .container{
+    width:100%;
+    height:100%;
+
+}
+.headerimg::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#111;
+    opacity:0.8;
+    z-index:-1;
+    transition:backgroound-color .3s;
+
+
+}
+.headertitle{
+    font-size:70px;
+    color:#fff;
+    font-weight:600;
+    font-family:var(--font-family);
+
+}
+.headerpera{
+    font-size:17px;
+    padding-right:35rem;
+    color:#ffffffcd;
+}
+.headerbtn{
+    --black:#000000;
+    --ch-black:#141414;
+    --eer-black:#1b1b1b;
+    --night-rider:#2e2e2e;
+    --width:#ffffff;
+    --af-white:#f3f3f3;
+    --ch-white:#e1e1e1;
+    border-radius:8px;
+    width:180px;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap:10px;
+    padding:0 15;
+    border:none;
+    color:white;
+    position:relative;
+    cursor:pointer;
+    font-weight:700;
+    transition-duration:0.2s;
+    background:var(--main-color);
+
+
+}
+.headerbtn::before,
+.headerbtn::after{
+    content:'';
+    position:absolute;
+    left:-2px;
+    top:-2px;
+    border-radius: 10px;
+    background:linear-gradient(45deg,
+               var(--ch-black),var(--ch-black),
+               var(--night-rider),var(--ch-white),
+              var(--night-rider),
+              var(--eer-black),var(--ch-black),var(--ch-black));
+    background-size: 400%;
+    width:calc(100%+4px);
+    height:calc(100%+4px);
+    z-index:-1;
+    animation: steam 15s linear infinite;
+    
+              
+    
+}
+@keyframes steam {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+    
+}
+.headerbtn::after{
+    filter:blur(50px);
+}
+.headerbtn :hover{
+    border:1px solid #fff;
+    box-shadow: 0 0 10px #fff;
+
+}
+.headerslider{
+    postion:relative;
+    width:100%;
+    height:100%;
+    /*margin-top:-120px;*/
+    z-index:99;
+    overflow:hidden;
+
+
+}
+.slidertitle{
+    color:#fff;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.slidertitle h4{
+    font-size:15px;
+    font-weight:600;
+}
+.sliderlfbtn buttton{
+
+}
