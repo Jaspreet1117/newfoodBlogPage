@@ -6,7 +6,7 @@ searchicon1.addEventListener('click',function(){
     search1.style.display="flex";
     searchicon1.style.display="none";
 })
-
+ 
 
 const searchicon2=document.querySelector("#searchicon2");
 const srchicon2=document.querySelector("#srchicon2");
