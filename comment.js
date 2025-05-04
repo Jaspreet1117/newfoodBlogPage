@@ -7,7 +7,7 @@ const data = {
       username: "juliusomo",
     },
     comments: [
-      {
+      { 
         parent: 0,
         id: 1,
         content:
