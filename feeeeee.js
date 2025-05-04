@@ -7,7 +7,7 @@ document.getElementById('btn').addEventListener('click', function() {
             selectedFeedback = icon.querySelector('h3').textContent;
         }
     });
-
+ 
     if (selectedFeedback) {
         alert('Thank you for your feedback! You selected: ' + selectedFeedback);
     } else {
